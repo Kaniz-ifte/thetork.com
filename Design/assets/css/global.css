@@ -1,0 +1,226 @@
+:root {
+    font-size: 16px;
+}
+
+@font-face{font-family:'GothamSSm';
+src:url('../fonts/GothamSSm-Book.woff2') format('woff2'),url('../fonts/GothamSSm-Book.woff') format('woff');font-weight:normal;font-style:normal}
+
+body {
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Raleway',sans-serif;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'GothamSSm',sans-serif;
+     font-weight: normal;
+     font-style: normal;
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #808080
+}
+
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+    display: block;
+}
+
+
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-weight: 300;
+}
+
+hr.hr {
+    margin: 50px 0;
+    opacity: 0.75;
+}
+
+
+a,
+b,
+div,
+li,
+ul {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -moz-outline-: none
+}
+
+li, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+input,
+input:active,
+input:focus,
+input:hover,
+textarea,
+textarea:active,
+textarea:focus,
+textarea:hover {
+    -moz-outline: none;
+    outline: none
+}
+
+
+img {
+    border: none;
+    max-width: 100%;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: auto
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+
+h1, h2{
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: -.25px;
+}
+
+h3, h4{
+  letter-spacing: -.25px;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: .5px;
+    border-radius: 1.71875rem;
+    padding: 15px 50px;
+
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    white-space: normal
+}
+
+
+.btn-gradient3 {
+    background: #b224ef;
+    background: -webkit-linear-gradient(331deg, #b224ef 11%, #5055fa 55%);
+    background: -o-linear-gradient(331deg, #b224ef 11%, #5055fa 55%);
+    background: linear-gradient(119deg, #b224ef 11%, #5055fa 55%);
+    background-size: 101% auto
+}
+
+.btn-gradient3:hover {
+    background-size: 200% auto;
+    background-position: left center
+}
+
+a {
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+a:active,
+a:focus,
+a:hover,
+a:visited {
+    text-decoration: none;
+    outline: 0
+}
+
+
+.btn.btn-primary {
+     background-color: transparent;
+     border-color: transparent!important;;
+     box-shadow: none!important;
+     outline: none!important;
+}
+.btn.btn-primary:hover {
+     background-color: transparent;
+}
+.gradient-text{
+  background: linear-gradient(119deg, #b224ef 11%, #5055fa 55%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.cursive-text{
+  font-family: 'Kaushan Script', cursive;
+}
+
+.instagram_gallery img{
+     border-radius: 10px;
+}
+.mt-30{
+     margin-top: 30px!important;
+}

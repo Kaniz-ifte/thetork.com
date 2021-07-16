@@ -1,0 +1,418 @@
+.overlay {
+     background: linear-gradient(45deg, #e10522 0%, rgba(225, 5, 34, 0) 70%), linear-gradient(135deg, #3105d1 10%, rgba(49, 5, 209, 0) 80%), linear-gradient(225deg, #0adbd8 10%, rgba(10, 219, 216, 0) 80%), linear-gradient(315deg, #09f505 100%, rgba(9, 245, 5, 0) 70%);
+}
+
+.overlay {
+     position: fixed;
+     display: none !important;
+     width: 100vw;
+     max-height: 0;
+}
+
+.overlay.active {
+     display: block !important;
+     height: 100vh;
+     max-height: 100vh;
+     overflow-y: hidden;
+     transition-property: all;
+     transition-duration: .5s;
+     transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.absolute-center, .menu, .menu .btn .fab, .menu .btn.trigger .line {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     -webkit-transform: translateX(-50%) translateY(-50%);
+     transform: translateX(-50%) translateY(-50%);
+}
+
+.menu {
+     width: 110px;
+     height: 110px;
+}
+
+.menu .btn {
+     position: absolute;
+     padding: 0px !important;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     background: rgba(255, 255, 255, 0.8);
+     opacity: 0;
+     z-index: -10;
+     cursor: pointer;
+     -webkit-transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
+     transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
+     transition: opacity 1s, z-index 0.3s, transform 1s;
+     transition: opacity 1s, z-index 0.3s, transform 1s, -webkit-transform 1s;
+     -webkit-transform: translateX(0);
+     transform: translateX(0);
+}
+
+.menu .btn .fab {
+     font-size: 3em;
+     -webkit-transition: color 0.3s;
+     transition: color 0.3s;
+}
+
+.menu .btn:hover .fab {
+     color: rgba(255, 255, 255, 0.7);
+}
+
+.menu .btn.trigger {
+     opacity: 1;
+     top: 35px !important;
+     z-index: 100;
+     cursor: pointer;
+     -webkit-transition: -webkit-transform 0.3s;
+     transition: -webkit-transform 0.3s;
+     transition: transform 0.3s;
+     transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.menu .btn.trigger:hover {
+     -webkit-transform: scale(1.2);
+     transform: scale(1.2);
+}
+
+.menu .btn.trigger:hover .line {
+     background-color: rgba(255, 255, 255, 0.7);
+}
+
+.menu .btn.trigger:hover .line:before, .menu .btn.trigger:hover .line:after {
+     background-color: rgba(255, 255, 255, 0.7);
+}
+
+.menu .btn.trigger .line {
+     width: 60%;
+     height: 6px;
+     background: #000;
+     border-radius: 6px;
+     -webkit-transition: background-color 0.3s, height 0.3s, top 0.3s;
+     transition: background-color 0.3s, height 0.3s, top 0.3s;
+}
+
+.menu .btn.trigger .line:before, .menu .btn.trigger .line:after {
+     content: "";
+     display: block;
+     position: absolute;
+     left: 0;
+     width: 100%;
+     height: 6px;
+     background: #000;
+     border-radius: 6px;
+     -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+     transition: background-color 0.3s, -webkit-transform 0.3s;
+     transition: background-color 0.3s, transform 0.3s;
+     transition: background-color 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+
+.menu .btn.trigger .line:before {
+     top: -12px;
+     -webkit-transform-origin: 15% 100%;
+     transform-origin: 15% 100%;
+}
+
+.menu .btn.trigger .line:after {
+     top: 12px;
+     -webkit-transform-origin: 25% 30%;
+     transform-origin: 25% 30%;
+}
+
+.menu .rotater {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     -webkit-transform-origin: 50% 85%;
+     transform-origin: 50% 85%;
+}
+
+.menu.active .btn-icon {
+     opacity: 1;
+     z-index: 50;
+}
+
+.menu.active .trigger .line {
+     height: 0px;
+     top: 45%;
+}
+
+.menu .menu-content {
+     margin-top: 25px;
+     display: block;
+}
+
+.menu .menu-icon {
+     height: 32px;
+     width: 32px;
+}
+
+.menu .menu-title {
+     color: #ffffff;
+     font-size: 14px;
+     padding-top: 0px
+}
+
+.menu.active .trigger .line:before {
+     -webkit-transform: rotate(45deg);
+     transform: rotate(45deg);
+     width: 110%;
+}
+
+.menu.active .trigger .line:after {
+     -webkit-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+     width: 110%;
+}
+
+.rotater:nth-child(1) {
+     -webkit-transform: rotate(-22.5deg);
+     transform: rotate(-22.5deg);
+}
+
+.menu.active .rotater:nth-child(1) .btn-icon {
+     -webkit-transform: translateY(-10em) rotate(22.5deg);
+     transform: translateY(-10em) rotate(22.5deg);
+}
+
+.rotater:nth-child(2) {
+     -webkit-transform: rotate(22.5deg);
+     transform: rotate(22.5deg);
+}
+
+.menu.active .rotater:nth-child(2) .btn-icon {
+     -webkit-transform: translateY(-10em) rotate(-22.5deg);
+     transform: translateY(-10em) rotate(-22.5deg);
+}
+
+.rotater:nth-child(3) {
+     -webkit-transform: rotate(67.5deg);
+     transform: rotate(67.5deg);
+}
+
+.menu.active .rotater:nth-child(3) .btn-icon {
+     -webkit-transform: translateY(-10em) rotate(-67.5deg);
+     transform: translateY(-10em) rotate(-67.5deg);
+}
+
+.rotater:nth-child(4) {
+     -webkit-transform: rotate(112.5deg);
+     transform: rotate(112.5deg);
+}
+
+.menu.active .rotater:nth-child(4) .btn-icon {
+     -webkit-transform: translateY(-10em) rotate(-112.5deg);
+     transform: translateY(-10em) rotate(-112.5deg);
+}
+
+.rotater:nth-child(5) {
+     -webkit-transform: rotate(157.5deg);
+     transform: rotate(157.5deg);
+}
+
+.menu.active .rotater:nth-child(5) .btn-icon {
+     -webkit-transform: translateY(-10em) rotate(-157.5deg);
+     transform: translateY(-10em) rotate(-157.5deg);
+}
+
+.rotater:nth-child(6) {
+     -webkit-transform: rotate(202.5deg);
+     transform: rotate(202.5deg);
+}
+
+.menu.active .rotater:nth-child(6) .btn-icon {
+     -webkit-transform: translateY(-10em) rotate(-202.5deg);
+     transform: translateY(-10em) rotate(-202.5deg);
+}
+
+.rotater:nth-child(7) {
+     -webkit-transform: rotate(247.5deg);
+     transform: rotate(247.5deg);
+}
+
+.menu.active .rotater:nth-child(7) .btn-icon {
+     -webkit-transform: translateY(-10em) rotate(-247.5deg);
+     transform: translateY(-10em) rotate(-247.5deg);
+}
+
+.rotater:nth-child(8) {
+     -webkit-transform: rotate(292.5deg);
+     transform: rotate(292.5deg);
+}
+
+.menu.active .rotater:nth-child(8) .btn-icon {
+     -webkit-transform: translateY(-10em) rotate(-292.5deg);
+     transform: translateY(-10em) rotate(-292.5deg);
+}
+
+.mfp-bg.xs-promo-popup {
+     background:linear-gradient(0deg, rgba(80, 85, 250, 0.6)  0%, #5055fa 100%);
+     /* background: rgba(0, 151, 19, 0.6); */
+     /* background: linear-gradient(-31deg, #00ecbc 10%, #0369d1 70%); */
+     padding-bottom: 100%;
+     border-radius: 100%;
+     overflow: hidden;
+     -webkit-animation: menu-animation .8s ease-out forwards;
+     animation: menu-animation .8s ease-out forwards
+}
+
+@-webkit-keyframes menu-animation {
+     0% {
+          opacity: 0;
+          -webkit-transform: scale(0.04) translateY(300%);
+          transform: scale(0.04) translateY(300%)
+     }
+
+     40% {
+          -webkit-transform: scale(0.04) translateY(0);
+          transform: scale(0.04) translateY(0);
+          -webkit-transition: ease-out;
+          -o-transition: ease-out;
+          transition: ease-out
+     }
+
+     40% {
+          -webkit-transform: scale(0.04) translateY(0);
+          transform: scale(0.04) translateY(0)
+     }
+
+     60% {
+          opacity: 1;
+          -webkit-transform: scale(0.02) translateY(0px);
+          transform: scale(0.02) translateY(0px)
+     }
+
+     61% {
+          opacity: 1;
+          -webkit-transform: scale(0.04) translateY(0px);
+          transform: scale(0.04) translateY(0px)
+     }
+
+     99.9% {
+          opacity: 1;
+          height: 0;
+          padding-bottom: 100%;
+          border-radius: 100%
+     }
+
+     to {
+          opacity: 1;
+          -webkit-transform: scale(2) translateY(0px);
+          transform: scale(2) translateY(0px);
+          height: 100%;
+          padding-bottom: 0;
+          border-radius: 0
+     }
+}
+
+@keyframes menu-animation {
+     0% {
+          opacity: 0;
+          -webkit-transform: scale(0.04) translateY(300%);
+          transform: scale(0.04) translateY(300%)
+     }
+
+     40% {
+          -webkit-transform: scale(0.04) translateY(0);
+          transform: scale(0.04) translateY(0);
+          -webkit-transition: ease-out;
+          -o-transition: ease-out;
+          transition: ease-out
+     }
+
+     40% {
+          -webkit-transform: scale(0.04) translateY(0);
+          transform: scale(0.04) translateY(0)
+     }
+
+     60% {
+          opacity: 1;
+          -webkit-transform: scale(0.02) translateY(0px);
+          transform: scale(0.02) translateY(0px)
+     }
+
+     61% {
+          opacity: 1;
+          -webkit-transform: scale(0.04) translateY(0px);
+          transform: scale(0.04) translateY(0px)
+     }
+
+     99.9% {
+          opacity: 1;
+          height: 0;
+          padding-bottom: 100%;
+          border-radius: 100%
+     }
+
+     to {
+          opacity: 1;
+          -webkit-transform: scale(2) translateY(0px);
+          transform: scale(2) translateY(0px);
+          height: 100%;
+          padding-bottom: 0;
+          border-radius: 0
+     }
+}
+
+.xs-promo-popup .modal-content {
+     background-color: transparent;
+     padding: 0px;
+     border: 0px
+}
+
+.xs-promo-popup .mfp-close {
+     color: #FFFFFF;
+     opacity: 0;
+     -webkit-transition: all 1s ease .8s;
+     -o-transition: all 1s ease .8s;
+     transition: all 1s ease .8s;
+     -webkit-transform: translateY(-500px);
+     -ms-transform: translateY(-500px);
+     transform: translateY(-500px)
+}
+
+.xs-promo-popup.mfp-ready {}
+
+.xs-promo-popup.mfp-ready .mfp-close {
+     opacity: 1;
+     -webkit-transform: translateY(0);
+     -ms-transform: translateY(0);
+     transform: translateY(0)
+}
+
+.xs-promo-popup.mfp-bg.mfp-removing {
+     background-color: rgba(0, 0, 0, 0);
+}
+
+.xs-promo-popup.my-mfp-slide-bottom .zoom-anim-dialog {
+     opacity: 0;
+     -webkit-transition: all 1s ease .8s;
+     -o-transition: all 1s ease .8s;
+     transition: all 1s ease .8s;
+     -webkit-transform: translateY(-500px);
+     -ms-transform: translateY(-500px);
+     transform: translateY(-500px)
+}
+
+.xs-promo-popup.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+     opacity: 1;
+     -webkit-transform: translateY(0);
+     -ms-transform: translateY(0);
+     transform: translateY(0)
+}
+
+/* content at start */
+.xs-promo-popup.mfp-wrap .mfp-content {}
+
+/* content animate it */
+.xs-promo-popup.mfp-wrap.mfp-ready .mfp-content {
+     top: -100px;
+}
+
+/* content animate out */
+.xs-promo-popup.mfp-wrap.mfp-removing .mfp-content {}

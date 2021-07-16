@@ -1,0 +1,167 @@
+.business-info-and-history {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.business-info-area {
+    position: relative
+}
+
+.business-info-area {
+    padding-top: 70px;
+    padding-bottom: 90px
+}
+
+.xs-mb-5 {
+    margin-bottom: 50px
+}
+
+
+
+
+.single-team-style2{
+    position: relative;
+    overflow: hidden
+}
+
+.single-team-style2:hover .hover-area{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px)
+}
+
+.single-team-style2:hover .image:before{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px)
+}
+
+.single-team-style2 .image{
+    position: relative;
+    overflow: hidden
+}
+
+.single-team-style2 .image:before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #5055fa;
+    background: -webkit-gradient(linear, left bottom, left top, from(#5055fa), to(rgba(80, 85, 250, 0)));
+    background: -webkit-linear-gradient(bottom, #5055fa 0%, rgba(80, 85, 250, 0) 100%);
+    background: -o-linear-gradient(bottom, #5055fa 0%, rgba(80, 85, 250, 0) 100%);
+    background: linear-gradient(0deg, #5055fa 0%, rgba(80, 85, 250, 0) 100%);
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0
+}
+
+.single-team-style2 .hover-area{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 30px;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.single-team-style2 .hover-area .team-content{
+    margin-bottom: 18px
+}
+
+.single-team-style2 .hover-area .team-content .xs-title{
+    color: #FFFFFF
+}
+
+.single-team-style2 .team-content .xs-title{
+    font-size: 1.125rem
+}
+
+.single-team-style2 .team-content span{
+    font-size: 0.8125rem;
+    display: block
+}
+.our-team .single-team-style2 .image{
+      border-radius: 5px;
+}
+.our-team .single-team-style2 {
+     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+}
+
+.our-team img {
+
+    width: 100%;
+}
+
+.service-title {
+     position: absolute;
+     top: 65%;
+     left: 0;
+     width: 100%;
+
+}
+
+.xs-title,
+a,
+h4 {
+    color: #000000
+}
+
+
+.xs-title,
+h4 {
+    font-size: 1.375rem;
+    font-weight: 600
+}
+
+.section-title,
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #000000
+}
+
+.service-title .xs-title strong{
+     text-align: center;
+     font-size: 16px;
+     border-radius: 40px;
+     color: #ffffff;
+     padding: 7px 20px;
+    background: #b224ef;
+    background: -webkit-linear-gradient(331deg, #b224ef 11%, #5055fa 55%);
+    background: -o-linear-gradient(331deg, #b224ef 11%, #5055fa 55%);
+    background: linear-gradient(119deg, #b224ef 11%, #5055fa 55%);
+    background-size: 101% auto
+}
+
+.service-title .xs-title strong:hover {
+    background-size: 200% auto;
+    background-position: left center
+}
+
+
+.xs-title,
+a,
+h4 {
+    color: #000000
+}
+
+

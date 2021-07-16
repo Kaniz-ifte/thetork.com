@@ -1,0 +1,110 @@
+.calltoaction-area {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 102px 0
+}
+
+.call-to-action {
+    position: relative;
+    z-index: 2
+}
+
+.call-to-action .content-title {
+    color: #FFFFFF;
+    margin-bottom: 35px;
+    line-height:35px;
+}
+
+.content-title,
+h3 {
+    color: #000000;
+
+    font-weight: 700
+}
+
+.xs-title,
+a,
+h4 {
+    color: #000000
+}
+
+
+.xs-title,
+h4 {
+    font-weight: 600
+}
+
+.btn-wraper .btn:not(:last-child) {
+    margin-right: 18px
+}
+
+.btn.style2 {
+    background-color: #22c8e5
+}
+
+.btn.style2:hover {
+    background-color: #1599b0
+}
+
+.btn.icon-right > i {
+    float: right;
+    line-height: 52px;
+    padding-left: 19px
+}
+
+.btn.style2 > i {
+}
+
+.btn.btn-outline-secondary {
+    border-color: #22c8e5;
+    color: #FFFFFF;
+    border-width: 2px
+}
+
+.btn.btn-outline-secondary:hover {
+    background-color: #22c8e5
+}
+
+.call-to-action .btn-outline-secondary {
+    line-height: 52px
+}
+
+.calltoaction-area .xs-overlay {
+    opacity: .9
+}
+
+.call-to-action .btn{
+     padding: 0 50px;
+     line-height: 48px;
+}
+
+
+.gradient-bg {
+    background: #b224ef;
+    background: -webkit-linear-gradient(333deg, #b224ef 40%, #5055fa 100%);
+    background: -o-linear-gradient(333deg, #b224ef 40%, #5055fa 100%);
+    background: linear-gradient(117deg, #b224ef 40%, #5055fa 100%)
+}
+
+.xs-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    z-index: 0
+}
+
+.btn.style2 {
+    background-color: #22c8e5;
+}
+
+.btn.btn-outline-secondary {
+    border-color: #22c8e5;
+    color: #FFFFFF;
+    border-width: 2px
+}

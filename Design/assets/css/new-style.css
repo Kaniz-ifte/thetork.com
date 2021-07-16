@@ -1,0 +1,102 @@
+.right-fixed {
+     padding: 5px 2px;
+     margin: 0;
+     z-index: 50;
+     position: fixed;
+     top: 40vh;
+     right: 0px;
+     background: #ffffff;
+     border-radius: 3px 0px 0px 3px;
+     box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.35);
+}
+
+.right-fixed ul li {
+     margin: 0;
+     padding: 5px;
+     text-align: center;
+}
+
+.right-fixed ul li .navSidebar-button {
+     width: 30px;
+     height: 30px;
+     line-height: 33px;
+     border-radius: 3px;
+     text-align: center;
+     background: #f4f4f8;
+}
+
+.right-fixed ul li .navSidebar-button i {
+     -webkit-transition: color 0.3s ease;
+     transition: color 0.3s ease;
+     color: #5055fa;
+     /* font-weight: 700; */
+}
+
+.right-fixed ul li .navSidebar-button:hover i {
+     color: #ffffff;
+}
+
+.right-fixed ul li .navSidebar-button:hover {
+     background: linear-gradient(119deg, #b224ef 11%, #5055fa 55%);
+}
+
+/* exchange */
+.close-side-widget i {
+     line-height: 30px;
+}
+
+.close-side-widget:hover {
+     color: #ffffff;
+     background: linear-gradient(119deg, #b224ef 11%, #5055fa 55%);
+}
+
+.close-side-widget {
+     color: #5b5b5b;
+     background: #e1e1e1;
+     font-size: 0.9375rem;
+     font-weight: 700;
+     display: block;
+     width: 30px;
+     height: 30px;
+     line-height: 30px;
+     border: none;
+     border-radius: 3px;
+     text-align: center;
+     box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.35);
+}
+
+.xs-sidebar-widget {
+     box-shadow: 0px 0px 28px 0px rgba(82, 63, 105, 0.13);
+     border-radius: 3px 0px 0px 3px;
+}
+
+.color-white {
+     color: #ffffff;
+}
+
+.service-title {
+     position: absolute;
+     top: 65%;
+     left: 0;
+     width: 100%;
+
+}
+
+.service-title h2.xs-title strong{
+     text-align: center;
+     font-size: 16px;
+     border-radius: 40px;
+     color: #ffffff;
+     padding: 7px 20px;
+
+    background: #b224ef;
+    background: -webkit-linear-gradient(331deg, #b224ef 11%, #5055fa 55%);
+    background: -o-linear-gradient(331deg, #b224ef 11%, #5055fa 55%);
+    background: linear-gradient(119deg, #b224ef 11%, #5055fa 55%);
+    background-size: 101% auto
+}
+
+.service-title h2.xs-title strong:hover {
+    background-size: 200% auto;
+    background-position: left center
+}

@@ -1,0 +1,214 @@
+.gray-bg {
+    background-color: #fafafa;
+}
+
+.xs-section-padding {
+    padding: 80px 0;
+}
+
+.agency-section-title.text-center {
+    margin: 40px 0;
+}
+.agency-section-title {
+    margin-bottom: 23px;
+    position: relative;
+    z-index: 1;
+}
+
+.xs-title, a, h4 {
+    color: #000000;
+}
+.xs-title, h4 {
+
+    font-weight: 600;
+}
+
+.agency-section-title.section-title-style2 p {
+
+}
+p:last-child {
+    margin-bottom: 0px;
+}
+.agency-section-title p {
+    color: #777777;
+
+    margin-bottom: 0px;
+}
+
+.xs-mb-5 {
+    margin-bottom: 50px;
+}
+
+.single-team-style2 {
+    position: relative;
+    overflow: hidden
+}
+
+.single-team-style2:hover .hover-area{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px)
+}
+
+.single-team-style2:hover .image:before{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px)
+}
+
+.single-team-style2 .image{
+    position: relative;
+    overflow: hidden
+}
+
+.single-team-style2 .image:before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #5055fa;
+    background: -webkit-gradient(linear, left bottom, left top, from(#5055fa), to(rgba(80, 85, 250, 0)));
+    background: -webkit-linear-gradient(bottom, #5055fa 0%, rgba(80, 85, 250, 0) 100%);
+    background: -o-linear-gradient(bottom, #5055fa 0%, rgba(80, 85, 250, 0) 100%);
+    background: linear-gradient(0deg, #5055fa 0%, rgba(80, 85, 250, 0.36) 100%);
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0
+}
+
+.single-team-style2 .hover-area{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 30px;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.single-team-style2 .hover-area .team-content{
+    margin-bottom: 18px
+}
+
+.single-team-style2 .hover-area .team-content .xs-title{
+    color: #FFFFFF
+}
+
+.single-team-style2 .team-content .xs-title{
+
+}
+
+.single-team-style2 .team-content span{
+
+    display: block
+}
+.our-team .single-team-style2 .image{
+      border-radius: 5px;
+}
+.our-team .single-team-style2 {
+     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+}
+
+.our-team img {
+    width: 100%;
+}
+
+.xs-title, a, h4 {
+    color: #000000;
+}
+.xs-title, h4 {
+
+    font-weight: 600;
+}
+.social-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-list.version-5 li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid transparent;
+
+    background-color: #FFFFFF;
+}
+.social-list li a {
+    display: block;
+    width: 39px;
+    line-height: 39px;
+    border-radius: 100%;
+    border: 1px solid #6b7499;
+    text-align: center;
+
+    color: #333333;
+    height: 39px;
+}
+.xs-title, a, h4 {
+    color: #000000;
+}
+
+.social-list.version-5 li a > i {
+    background: -webkit-linear-gradient(331deg, #b224ef 19%, #5055fa 84%);
+    background: -o-linear-gradient(331deg, #b224ef 19%, #5055fa 84%);
+    background: linear-gradient(119deg, #b224ef 19%, #5055fa 84%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: #b224ef;
+}
+
+.team-bottom-info .content-title {
+    margin-bottom: 21px;
+}
+.content-title, h3 {
+    color: #000000;
+
+    font-weight: 700;
+}
+.xs-title, a, h4 {
+    color: #000000;
+}
+.xs-title, h4 {
+
+    font-weight: 600;
+}
+
+/*Screen Support*/
+@media(max-width: 767px){
+    .single-team-style2 .hover-area{
+        padding: 0px;
+    }
+    .social-list li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .social-list.version-5 li a {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .our-team .single-team-style2 {
+        margin-bottom: 30px;
+    }
+    .content-title, h3 {        
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+}

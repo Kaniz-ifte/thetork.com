@@ -1,0 +1,77 @@
+.xs-section-padding {
+    padding: 50px 0
+}
+
+.success-summary-content {
+    margin-bottom: 60px
+}
+
+.success-summary-content .content-title {
+    margin-bottom: 25px
+}
+
+.content-title,
+h3 {
+    color: #000000;
+    font-size: 1.75rem;
+    font-weight: 700
+}
+
+p:last-child {
+    margin-bottom: 0px
+}
+.owl-stage{
+  margin-top: 30px;
+}
+
+.owl-dots {
+    text-align: center
+}
+
+.owl-dots .owl-dot {
+    display: inline-block;
+    outline: none
+}
+
+.owl-dots .owl-dot:not(:last-child) {
+    margin-right: 15px
+}
+
+.owl-dots .owl-dot span {
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(192, 192, 192, 0.502);
+    width: 8px;
+    height: 8px;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.owl-dots .owl-dot span:before {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: -6px;
+    border: 1px solid rgba(27, 209, 234, 0.502);
+    border-radius: 50%;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.owl-dots .owl-dot.active span {
+    background-color: #1bd1ea
+}
+
+.owl-dots .owl-dot.active span:before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
